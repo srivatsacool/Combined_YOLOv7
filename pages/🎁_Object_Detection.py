@@ -285,8 +285,8 @@ if __name__ == "__main__":
     # st.markdown("**:green[My GitHub]** 📖: https://github.com/srivatsacool ")
     #st.markdown(":green[$\sqrt{x^2+y^2}=1$] is a Pythagorean identity. :pencil:")
 
-    image = Image.open('Pages/dis1_display.png')
-    image2 = Image.open('Pages/dis2_display.jpg')
+    image = Image.open('pages/dis1_display.png')
+    image2 = Image.open('pages/dis2_display.jpg')
     cv2_want = False
     with st.sidebar:
         CUDA = st.checkbox("CUDA ( Use GPU )",value = True)
@@ -300,7 +300,7 @@ if __name__ == "__main__":
             'NMS Threshold of the Model',0.0, 1.0, 0.5)
         st.write('NMS Threshold :', NMS_THRES) 
         WEIGHTS = st.selectbox('Choose the weights for the Model',
-        ('Pages/yolov7.onnx','Pages/yolov7-e6e.onnx'),index = 0)
+        ('pages/yolov7.onnx','pages/yolov7-e6e.onnx'),index = 0)
         
         li =  ['person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus', 'train', 'truck', 'boat', 'traffic light', 
          'fire hydrant', 'stop sign', 'parking meter', 'bench', 'bird', 'cat', 'dog', 'horse', 'sheep', 'cow', 
@@ -330,7 +330,7 @@ if __name__ == "__main__":
 
         UPLOAD = st.file_uploader("Choose a file (Supports only .mp4 , .jpg )" , type = ['jpg','mp4'])
         EXAMPLES = st.selectbox('Would like to use our Examples !!',
-        ('Pages/People.mp4','Pages/car2.mp4','Pages/traffic.jpg','Pages/NewYork TimesSquare.jpg'),index = 2)
+        ('pages/People.mp4','pages/car2.mp4','pages/traffic.jpg','pages/NewYork TimesSquare.jpg'),index = 2)
         if UPLOAD != None:
             if FILE_TYPE=='Image':
                 st.image(UPLOAD)
