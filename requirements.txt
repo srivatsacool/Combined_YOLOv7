@@ -1,10 +1,11 @@
 # Usage: pip install -r requirements.txt
-opencv-python-headless<4.3
-opencv-python 
+opencv-contrib-python-headless
 numpy
 onnxruntime-gpu
 Pillow
 easyocr
 imutils
 streamlit
-opencv-python-headless<4.3
+ffmpeg 
+libsm6
+libxext6
