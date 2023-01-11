@@ -7,4 +7,3 @@ easyocr
 imutils
 streamlit
 ffmpeg 
-libxext6
