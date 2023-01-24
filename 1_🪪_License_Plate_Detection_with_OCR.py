@@ -341,7 +341,7 @@ if __name__ == "__main__":
                 - Based on state-of-art object detection model **:blue['YOLOv7']**, latest in the YOLO family .
                 - Trained on a Custom Dataset that I have annotated myself , consists of 1000 train , 1000 val , 500 test images .
                 - OCR is done with the help of **:red[EasyOCR]** libary (custom OCR coming soon...) .
-                - More details in **:green[GitHub]** Repo :- .
+                - More details in **:green[GitHub]** Repo :- https://github.com/srivatsacool/Automatic-License-Plate-Recognition-with-OCR .
                 """)
 
     image = Image.open('lic1.jpg')
