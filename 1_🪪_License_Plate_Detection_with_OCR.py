@@ -226,8 +226,8 @@ def start_process(Cuda , Weights , Source , Conf_thres , Nms_thres , Need_of_NMS
             #fps=str(fps)
             pre_fps = new_fps
                         
-            if cv2.waitKey(1) == ord('q'): #press q in the keyboard to exit.
-                break
+            #if cv2.waitKey(1) == ord('q'): #press q in the keyboard to exit.
+              #  break
             try:
                 # Read frame from the video
                 ret, frame = cap.read()
